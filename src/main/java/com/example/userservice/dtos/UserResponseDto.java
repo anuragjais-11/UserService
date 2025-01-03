@@ -16,8 +16,8 @@ public class UserResponseDto {
 
     public static UserResponseDto from(User user) {
         UserResponseDto responseDto = new UserResponseDto();
-        responseDto.setName(user.getName());
         responseDto.setEmail(user.getEmail());
+        responseDto.setName(user.getName());
         responseDto.setRoleList(user.getRoles());
 
         return responseDto;
